@@ -5,7 +5,6 @@ import 'animate.css';
 import TopToken from '@/components/Charts/TopToken';
 import InExp from '@/components/Charts/InExp';
 import PenCom from '@/components/Charts/PenCom';
-import TFA from '@/components/Charts/TFA';
 import TransactionVolumeChart from '@/components/Charts/TransactionVolumeChart';
 import TokenHolding from '@/components/Charts/TokenHolding';
 import NetworthAnalysis from '@/components/Charts/NetworthAnalysis';
