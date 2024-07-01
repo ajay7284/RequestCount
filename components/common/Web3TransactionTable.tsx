@@ -85,9 +85,9 @@ const Web3TransactionTable = ({ transactions, isSidebarOpen }) => {
           </div>
         </div>
         <div className="overflow-x-auto">
-          <div className="bg-gradient-to-r from-teal-100 to-green-100 p-6 rounded-lg shadow-md">
+          <div className="p-6 rounded-lg shadow-md">
             <table className="min-w-full rounded-lg">
-              <thead className="bg-gradient-to-r from-green-500 to-teal-500 text-white uppercase text-sm leading-normal">
+              <thead className="bg-violet-950	 text-white uppercase text-sm leading-normal">
                 <tr>
                   <th className="py-3 px-6 text-left">Created</th>
                   <th className="py-3 px-6 text-left">Invoice</th>
