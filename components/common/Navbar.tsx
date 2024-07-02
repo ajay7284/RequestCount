@@ -6,6 +6,8 @@ import { LayoutDashboard, Wallet, Menu, X ,Home,FileText,Repeat} from 'lucide-re
 import { truncateAddress } from "@/utils/walletUtils";
 import { Button } from "../common";
 import { FaFileInvoiceDollar } from "react-icons/fa";
+import ReactTooltip from 'react-tooltip';
+
 
 const Sidebar = () => {
   const router = useRouter();
@@ -45,13 +47,13 @@ const Sidebar = () => {
 
   return (
     <div className={`fixed top-0 left-0 h-screen bg-[#0B0C10] text-gray-300 transition-all duration-300 ease-in-out ${isOpen ? 'w-64' : 'w-20'} overflow-hidden z-50 shadow-lg flex flex-col justify-between font-sans`}>
-      <div className="flex flex-col items-center mt-6 relative">
+      <div className="flex flex-col items-center gap-8 relative">
         {isOpen ? (
           <>
-            <a
+            {/* <a
               target="_blank"
               rel="noreferrer noopener"
-              href="https://request.network/"
+              href="/dashboard"
               className="mb-[30px] flex items-center justify-center"
             >
               <img
@@ -59,7 +61,20 @@ const Sidebar = () => {
                 alt="Request Network Logo"
                 className={`transition-opacity duration-300 ${isOpen ? 'w-[100px] xl:w-[140px] hover:opacity-80' : 'w-16 xl:w-[40px]'}`}
               />
-            </a>
+
+ 
+            </a> */}
+          <Link href="/dashboard">
+            <img
+                src="assets/c2.png"
+                alt="Request Network Logo"
+                className={`transition-opacity duration-300 absolute  right-24 ${isOpen ? 'w-[100px] xl:w-[140px] hover:opacity-80 absolute top-0' : 'w-16 xl:w-[40px]'}`}
+                style={{top:"-10px"}}
+              />
+            </Link>
+
+
+
             <button
               className={`absolute top-4  text-gray-300 focus:outline-none ${isOpen ? 'right-10' : 'top-20'}`}
               onClick={toggleSidebar}
@@ -68,17 +83,18 @@ const Sidebar = () => {
             </button>
           </>
         ) : (
-          <>
+          < >
             <button
-              className={`absolute top-2 right-2 text-gray-300 focus:outline-none ${isOpen ? 'right-10' : 'top-20'}`}
+              className={`absolute   text-gray-300 focus:outline-none ${isOpen ? 'right-10' : 'top-20'}`}
               onClick={toggleSidebar}
+              style={{marginTop:"-50px",right:"0px" }}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6 absolute right-7" />}
             </button>
-            <a
-              target="_blank"
+            {/* <a
+              target=""
               rel="noreferrer noopener"
-              href="https://request.network/"
+              href="/dashboard"
               className="mb-[30px] flex items-center justify-center"
             >
               <img
@@ -86,7 +102,19 @@ const Sidebar = () => {
                 alt="Request Network Logo"
                 className={`transition-opacity duration-300 absolute top-14 ${isOpen ? 'w-[100px] xl:w-[140px] hover:opacity-80' : 'w-16 xl:w-[40px]'}`}
               />
-            </a>
+            </a> */}
+
+            {/* <Link href="/dashboard">
+            <img
+                src="assets/c2.png"
+                alt="Request Network Logo"
+                className={`transition-opacity duration-300 absolute  ${isOpen ? 'w-[100px] xl:w-[140px] hover:opacity-80 ' : 'w-16 xl:w-[40px]'}`}
+                style={{top:"80px",right:"10px"}}
+              />
+            </Link> */}
+
+
+            
           </>
         )}
         <ul className={`flex flex-col items-start    ${isOpen ? "mt-0" : "mt-24"}      mt-16 w-full gap-4 px-4` }>
