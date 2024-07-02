@@ -22,7 +22,7 @@ const PenCom = () => {
         plugins: {
             tooltip: {
                 callbacks: {
-                    label: (context) => {
+                    label: (context:any) => {
                         const label = context.label || '';
                         const value = context.raw || 0;
                         return `${label}: $${value}`;

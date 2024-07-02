@@ -12,7 +12,7 @@ function NetworthAnalysis() {
     const [timeframe, setTimeframe] = useState('monthly');
 
 
-    const dataLine = {
+    const dataLine:any = {
         daily: {
             labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
             datasets: [
@@ -51,7 +51,7 @@ function NetworthAnalysis() {
         },
     };
 
-    const optionsLine = {
+    const optionsLine:any = {
         responsive: true,
         plugins: {
             legend: {
@@ -66,7 +66,7 @@ function NetworthAnalysis() {
             y: {
                 beginAtZero: true,
                 ticks: {
-                    callback: function (value) {
+                    callback: function (value:any) {
                         return '$' + value;
                     },
                 },
