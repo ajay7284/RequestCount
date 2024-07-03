@@ -116,7 +116,7 @@ const Web3TransactionTable = () => {
   }
   
   return (
-    <div className={`main-container bg-gray-100 shadow-md rounded-lg p-8 ${isSidebarOpen ? 'ml-64' : 'ml-0'}`}>
+    <div className={`main-container bg-gray-100 shadow-md rounded-lg p-8 ml-64 mr-36 mt-16 ${isSidebarOpen ? 'ml-64' : 'ml-0'}`}>
       <div className="container mx-auto px-8">
         <h1 className="text-2xl font-bold mb-6 text-center text-black">Web3 Transactions</h1>
         <div className="mb-6 flex flex-col sm:flex-row justify-between items-center">
