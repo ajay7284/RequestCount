@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const links = [
  
-   {
+    {
       name: "My Dashboard",
       href: "/dashboard",
       icon: <LayoutDashboard className="w-6 h-6" />,
