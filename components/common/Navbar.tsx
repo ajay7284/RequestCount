@@ -17,12 +17,8 @@ const Sidebar = () => {
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   const links = [
+ 
    {
- name:"Home",
- href:"/homepage",
- icon:<Home className="w-6 h-6"/>,
-   },
-    {
       name: "My Dashboard",
       href: "/dashboard",
       icon: <LayoutDashboard className="w-6 h-6" />,
