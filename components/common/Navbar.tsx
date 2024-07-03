@@ -62,7 +62,7 @@ const Sidebar = () => {
             </a> */}
           <Link href="/dashboard">
             <img
-                src="assets/c2.png"
+                src="https://request-count-homepage.vercel.app/C2.png"
                 alt="Request Network Logo"
                 className={`transition-opacity duration-300 absolute  right-24 ${isOpen ? 'w-[100px] xl:w-[140px] hover:opacity-80 absolute top-0' : 'w-16 xl:w-[40px]'}`}
                 style={{top:"-10px"}}
