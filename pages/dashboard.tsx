@@ -126,6 +126,8 @@ const Dashboard = () => {
                         <h2 className="text-2xl font-bold mb-4 text-center">Wallet</h2>
                         <div className="h-64 mx-9">
                           <p> {wallet?.accounts[0].address}</p> 
+                            <p>Currently we have integrated only for Sepolia Ethereum network</p>
+                            <p> We plan to expand this integration to other chains soon.</p>
                         </div>
                     </div>
                 </motion.div>
